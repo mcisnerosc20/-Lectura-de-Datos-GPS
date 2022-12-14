@@ -1,7 +1,7 @@
 [![Aspose-Words-f708d298-ce78-40fa-86e4-14de3b3fa0d4-001.png](https://i.postimg.cc/pLGQ8ypp/Aspose-Words-f708d298-ce78-40fa-86e4-14de3b3fa0d4-001.png)](https://postimg.cc/5XzFW45V)
 
 
- Facultad de Ingeniería Civil<br>Ingeniero Topográfo Geomatico<br>Programacion II<br>Mtro. Sebastián Gonzales Zepeda<br>Lectura de datos GPS en python<br>Ubicación: Campus Coquimatlan, Facultad de Ingeniería Civil<br>Integrantes:<br>Manuel Cisneros Castillo 3°B<br>Martha Julia De la Torre Venegas 3°B<br>Raul Said Mancilla Vargas 3°B<br>15 de Noviembre del 2022
+ Facultad de Ingeniería Civil<br>Ingeniero Topográfo Geomatico<br>Programacion II<br>Mtro. Sebastián Gonzales Zepeda<br>Lectura de datos GPS en python<br>Ubicación: Campus Coquimatlan, Facultad de Ingeniería Civil<br>Integrantes:<br>Manuel Cisneros Castillo 3°B<br>Martha Julia De la Torre Venegas 3°B<br>Raul Said Mancilla Vargas 3°B<br>13 de diciembre del 2022
 
 
 # **Lectura de datos GPS con Python**
@@ -81,6 +81,10 @@ Después de importar todas librerías necesarias, ahora solo importamos o enlaza
 Ya importado el archivo solo indicamos que debe de leerlo por sus columnas para asi registralas y poder graficarlas, ya leido el archivo y que lo haya encontrado en drive, ahora lo indicamos que lo grafique desde un mapa y los ubique mediante unos puntos ¿, junto con su descripcion y ID, lo cual para ello tambien indicamos como un titulo representatico al mapa de lo cual esta asignado como coordendas puntos locales.
 
 [![Aspose-Words-201be7f2-5c67-4fde-b0ac-ffc944e8e01a-006.png](https://i.postimg.cc/bvKqXzQq/Aspose-Words-201be7f2-5c67-4fde-b0ac-ffc944e8e01a-006.png)](https://postimg.cc/xkywMVxZ)
+
+Para un mejor entendimiento a la hora de ejecutar el programa, además de representar las coordenadas en un mapa, el programa nos muestra la tabla con los datos que contiene nuestro archivo .csv
+
+[![Aspose-Words-ac24bb84-5e37-4b74-aa54-0a8ca72c5e17-007.png](https://i.postimg.cc/m2vNrkyb/Aspose-Words-ac24bb84-5e37-4b74-aa54-0a8ca72c5e17-007.png)](https://postimg.cc/N5xrJgnV)
 
 Finalmente pues al crear todo el programa, lo hacemos correr y checamos correctamente que no haya falla a la hora de ller el archvio desde drive para poder seguirlo, y asi finalmente grafica los puntos que estan el archivo .csv generando un mapa con sus coordenadas que hayamos capturado.
 ## **Manejo de datos**
