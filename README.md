@@ -107,6 +107,55 @@ Como resultado final presentamos un programa que dadas las características geog
 
 Entrando en posibles aplicaciones el programa proporcionado podría ser utilizado como una herramienta en distintas áreas en las que se requiera de la ubicación por áreas, regiones, etc., de algunos elementos, por ejemplo; mediante coordenadas se podría hacer una esquematización para poder hacer un análisis adecuado de la información sobre algún tema. De esta manera todo aquel que trabaje con la ubicación geográfica de las cosas podría utilizar el programa para darle mayor énfasis a sus proyectos futuros. En este caso con ayuda del programa realizado se hace la ubicación de los resultados obtenidos en un censo elaborado en el municipio de Colima, es por esta razón que los puntos ubicados se concentran en la región sureste del gráfico. 
 
+El programa realizado y mejorado es el siguiente:
+
+#Programa que muestra y grafica las cordenadas importadas desde un archivo .csv
+
+#O2 Proyecto - Manuel Guadalupe Cisneros Castillo 
+
+import plotly.express as px
+
+import pandas as pd
+
+from google.colab import files
+
+from google.colab import drive
+
+import os
+
+from geopy.geocoders import Nominatim
+
+drive.mount('/content/drive') #Debemos confirmar acceso a nuestra cuenta para el COLAB
+
+%cd "/content/drive/My Drive/Colab Notebooks/"
+
+%pwd
+
+fuente = '.'
+
+arch = "datosGPS.csv"
+
+df = pd.read\_csv("datosGPS.csv")
+
+print(df)
+
+fig = px.scatter\_geo(df,lat='easting',lon='northing', hover\_name="ID")
+
+fig.update\_layout(title = 'Mis Datos', title\_x=0.5)
+
+fig.show()
+
+geolocalizador = Nominatim()
+
+ubicacion = geolocalizador.reverse("19.33399138806788, -103.649772224436")
+
+print(ubicacion.address)
+
+print(ubicacion.latitude, ubicacion.longitude)
+
+print(ubicacion.raw)
+
+
 ## **Conclusión**
 Como conclusión final del proyecto queda claro que para la creación de códigos o programas que nos den resultados geoespaciales es demasiado importante saber cómo realizarlo y qué tipo de librerías o módulos tener que instalar para que así nos arroje resultados que esperamos, la parte geoespacial es muy amplia ya que se pueden crear diferentes tipos de programas o proyectos que demuestren resultados como mapas, puntos, gráficas, etc., es por eso que es muy importante conocer todo sobre eso ya que es indispensable para poder crear cual quiero tipo de trabajo que tenga que ver con la programación, así que como enseñanza de este proyecto se logró generar un programa lo cual nos arrojará resultados finales lo cual como objetivo que se tenía en mente era generar un mapa que creará los puntos y los identificará rápidamente importándolo desde un archivo .csv con coordenadas, descripción y su número de punto y al final se logró generar el programa que nos ayude a obtener esos resultados.
 ## **Referencias**
